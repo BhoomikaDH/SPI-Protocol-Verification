@@ -1,0 +1,374 @@
+ncverilog(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s086: Started on Jan 09, 2025 at 16:35:03 IST
+ncverilog
+	-uvm
+	testbench.sv
+	-access
+	+rwc
+	-coverage
+	all
+	-gui
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+	Extracting FSMs for coverage:
+		worklib.spi_master
+		worklib.spi_slave
+		worklib.top_dut
+		worklib.top_tb
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+ncelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+	Generating native compiled code:
+		worklib.\$unit_0x4ccdf83b :compilation_unit <0x657eab31>
+			streams:   0, words:     0
+		worklib.cdns_assert2uvm_pkg:sv <0x287b2c15>
+			streams:   3, words:  2639
+		worklib.cdns_uvm_pkg:sv <0x2b180302>
+			streams: 136, words: 297517
+		worklib.cdns_uvm_pkg:sv <0x5a19fe06>
+			streams:  10, words:  9567
+		worklib.cdns_uvm_pkg:sv <0x72b569b4>
+			streams:  28, words: 46637
+		worklib.cdns_uvm_pkg:sv <0x7dcfcef1>
+			streams:   9, words:  6436
+		worklib.cdns_uvmapi:svp <0x5c4d0a84>
+			streams:  27, words: 38295
+		worklib.spi_master:sv <0x50859f21>
+			streams:  16, words: 10164
+		worklib.spi_slave:sv <0x51dba906>
+			streams:   9, words:  5004
+		worklib.top_dut:sv <0x4f5c4fc1>
+			streams:  12, words:  4728
+		worklib.top_tb:sv <0x3ff57e09>
+			streams:  83, words: 141251
+		worklib.uvm_pkg:sv <0x04875edf>
+			streams:  27, words: 55779
+		worklib.uvm_pkg:sv <0x04b54442>
+			streams:   8, words:  9053
+		worklib.uvm_pkg:sv <0x06439ec3>
+			streams:  26, words: 58656
+		worklib.uvm_pkg:sv <0x0f305013>
+			streams:   9, words:  3363
+		worklib.uvm_pkg:sv <0x10df9cb7>
+			streams:  25, words: 71098
+		worklib.uvm_pkg:sv <0x14699eca>
+			streams:   7, words:  3230
+		worklib.uvm_pkg:sv <0x14b40a8c>
+			streams:  27, words: 48536
+		worklib.uvm_pkg:sv <0x18480459>
+			streams: 4718, words: 10640449
+		worklib.uvm_pkg:sv <0x18eeb671>
+			streams:  22, words: 68993
+		worklib.uvm_pkg:sv <0x19126a79>
+			streams: 219, words: 341922
+		worklib.uvm_pkg:sv <0x1b294a99>
+			streams:  27, words: 34211
+		worklib.uvm_pkg:sv <0x1c19bee2>
+			streams:  26, words: 42905
+		worklib.uvm_pkg:sv <0x1d30d125>
+			streams:  71, words: 153928
+		worklib.uvm_pkg:sv <0x21c4f0d1>
+			streams:   7, words:  3230
+		worklib.uvm_pkg:sv <0x226410a4>
+			streams:  25, words: 64671
+		worklib.uvm_pkg:sv <0x248cca49>
+			streams:  27, words: 45373
+		worklib.uvm_pkg:sv <0x2861fb50>
+			streams:   9, words:  5977
+		worklib.uvm_pkg:sv <0x2d3cc3a2>
+			streams:   7, words:  7967
+		worklib.uvm_pkg:sv <0x2d57b208>
+			streams:  52, words: 63026
+		worklib.uvm_pkg:sv <0x30173bef>
+			streams:   7, words:  2385
+		worklib.uvm_pkg:sv <0x36fab382>
+			streams:  29, words: 121899
+		worklib.uvm_pkg:sv <0x3a868194>
+			streams:   7, words:  1863
+		worklib.uvm_pkg:sv <0x473e1aa8>
+			streams:  25, words: 29023
+		worklib.uvm_pkg:sv <0x49121a2b>
+			streams:  25, words: 69451
+		worklib.uvm_pkg:sv <0x4b5d174c>
+			streams:  28, words: 36794
+		worklib.uvm_pkg:sv <0x4c3768be>
+			streams:  24, words: 35096
+		worklib.uvm_pkg:sv <0x4fad3b75>
+			streams: 127, words: 211178
+		worklib.uvm_pkg:sv <0x50bb6624>
+			streams:  25, words: 62303
+		worklib.uvm_pkg:sv <0x543ceead>
+			streams:  17, words: 18882
+		worklib.uvm_pkg:sv <0x5b7cfdc3>
+			streams:  24, words: 42173
+		worklib.uvm_pkg:sv <0x5e20f4fa>
+			streams:   7, words:  3230
+		worklib.uvm_pkg:sv <0x6558b0bd>
+			streams:  27, words: 43114
+		worklib.uvm_pkg:sv <0x6891e893>
+			streams:  23, words: 31599
+		worklib.uvm_pkg:sv <0x6bbf0b9b>
+			streams:   7, words:  1863
+		worklib.uvm_pkg:sv <0x6c5ea764>
+			streams:  24, words: 25750
+		worklib.uvm_pkg:sv <0x6cb34dce>
+			streams:  26, words: 40358
+		worklib.uvm_pkg:sv <0x6d290db9>
+			streams:  28, words: 35987
+		worklib.uvm_pkg:sv <0x71daa168>
+			streams:  25, words: 63122
+		worklib.uvm_pkg:sv <0x763673ad>
+			streams:  16, words: 26899
+		worklib.uvm_pkg:sv <0x7685500a>
+			streams:  27, words: 46271
+		worklib.uvm_pkg:sv <0x7ac778c3>
+			streams:  25, words: 67033
+		worklib.uvm_pkg:sv <0x7d9789c3>
+			streams:   8, words:  8608
+		worklib.uvm_pkg:sv <0x7f3c8a45>
+			streams:  32, words: 66159
+  	int count_s;
+  	          |
+ncelab: *W,COVUTA (./design.sv,108|13): Toggle coverage is not supported for SystemVerilog integer, real, string, dynamic array, sparse memory, and array of enum. It is also not supported for VHDL multi-dimensional array and array of record. There may also be other such objects in the design.
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                       4       4
+		Interfaces:                    1       1
+		Verilog packages:              4       4
+		Registers:                 13973   10209
+		Scalar wires:                 21       -
+		Vectored wires:               16       -
+		Named events:                  5      13
+		Always blocks:                10      10
+		Initial blocks:              288     160
+		Parallel blocks:              27      28
+		Cont. assignments:             2       2
+		Pseudo assignments:           23      23
+		Assertions:                    3       3
+		Compilation units:             2       2
+		SV Class declarations:       198     312
+		SV Class specializations:    381     381
+		Simulation timescale:      100ps
+	Writing initial simulation snapshot: worklib.top_tb:sv
+ncelab: *W,DPIEXP: DPI export function in  _sv_export.so not available.
+SVSEED default: 1
+ncsim: *E,IMPDLL: Unable to load the implicit shared object.
+OSDLERROR: (null)/top_tb/sv/_sv_export.so: cannot open shared object file: No such file or directory or file is not valid ELFCLASS64 library..
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /home/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> source /home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm top_tb.dut.cs top_tb.dut.master_address top_tb.dut.master_in_data top_tb.dut.master_out_data top_tb.dut.master_rd_wr top_tb.dut.mclk top_tb.dut.miso top_tb.dut.mosi top_tb.dut.reset top_tb.dut.sclk top_tb.dut.slave_address top_tb.dut.slave_in_data top_tb.dut.slave_out_data top_tb.dut.slave_rd_wr top_tb.dut.start
+Created probe 1
+ncsim> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (15.20-s086)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test test...
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+----------------------------------------------------------------
+Name                         Type                    Size  Value
+----------------------------------------------------------------
+uvm_test_top                 test                    -     @2636
+  i_env                      env                     -     @2701
+    i_agent                  agent                   -     @2748
+      i_driver               driver                  -     @2891
+        rsp_port             uvm_analysis_port       -     @2992
+        seq_item_port        uvm_seq_item_pull_port  -     @2941
+      i_monitor              monitor                 -     @2811
+        item_collected_port  uvm_analysis_port       -     @2860
+      i_sequencer            sequencer               -     @2971
+        rsp_export           uvm_analysis_export     -     @3080
+        seq_item_export      uvm_seq_item_pull_imp   -     @3628
+        arbitration_queue    array                   0     -    
+        lock_queue           array                   0     -    
+        num_last_reqs        integral                32    'd1  
+        num_last_rsps        integral                32    'd1  
+    i_scb                    scoreboard              -     @2778
+      item_collected_export  uvm_analysis_imp        -     @3705
+----------------------------------------------------------------
+
+UVM_INFO test.sv(19) @ 0: uvm_test_top [test] IN RUN PHASE OF TEST
+UVM_INFO scoreboard.sv(24) @ 0: uvm_test_top.i_env.i_scb [scoreboard] IN RUN PHASE OF SCOREBOARD
+UVM_INFO agent.sv(30) @ 0: uvm_test_top.i_env.i_agent [agent] IN RUN PHASE OF AGENT
+UVM_INFO sequencer.sv(13) @ 0: uvm_test_top.i_env.i_agent.i_sequencer [sequencer] IN RUN PHASE OF SEQUENCER
+UVM_INFO sequence1.sv(13) @ 0: uvm_test_top.i_env.i_agent.i_sequencer@@i_seq [sequence1] Executing sequence
+UVM_INFO driver.sv(22) @ 100: uvm_test_top.i_env.i_agent.i_driver [driver] IN RUN PHASE OF DRIVER
+UVM_INFO monitor.sv(28) @ 100: uvm_test_top.i_env.i_agent.i_monitor [monitor] IN RUN PHASE OF MONITOR
+stop -create -name Randomize -randomize
+Created stop Randomize
+
+UVM_INFO scoreboard.sv(31) @ 1950: uvm_test_top.i_env.i_scb [scoreboard] -----RD_WR Match-----
+UVM_INFO scoreboard.sv(32) @ 1950: uvm_test_top.i_env.i_scb [scoreboard] Master sent RD_WR:0  Slave received RD_WR:0
+UVM_INFO scoreboard.sv(40) @ 1950: uvm_test_top.i_env.i_scb [scoreboard] -----ADDRESS Match-----
+UVM_INFO scoreboard.sv(41) @ 1950: uvm_test_top.i_env.i_scb [scoreboard] Master sent ADDRESS:35  Slave received ADDRESS:35
+UVM_INFO scoreboard.sv(49) @ 1950: uvm_test_top.i_env.i_scb [scoreboard] -----MISO data Match-----
+UVM_INFO scoreboard.sv(50) @ 1950: uvm_test_top.i_env.i_scb [scoreboard] Master received MISO data:0  Slave sent MISO data:0
+UVM_INFO scoreboard.sv(58) @ 1950: uvm_test_top.i_env.i_scb [scoreboard] -----MOSI data Match-----
+UVM_INFO scoreboard.sv(59) @ 1950: uvm_test_top.i_env.i_scb [scoreboard] Master sent MOSI data:ba  Slave received MOSI data:ba
+UVM_INFO sequence1.sv(13) @ 2050: uvm_test_top.i_env.i_agent.i_sequencer@@i_seq [sequence1] Executing sequence
+UVM_INFO scoreboard.sv(31) @ 3950: uvm_test_top.i_env.i_scb [scoreboard] -----RD_WR Match-----
+UVM_INFO scoreboard.sv(32) @ 3950: uvm_test_top.i_env.i_scb [scoreboard] Master sent RD_WR:0  Slave received RD_WR:0
+UVM_INFO scoreboard.sv(40) @ 3950: uvm_test_top.i_env.i_scb [scoreboard] -----ADDRESS Match-----
+UVM_INFO scoreboard.sv(41) @ 3950: uvm_test_top.i_env.i_scb [scoreboard] Master sent ADDRESS:26  Slave received ADDRESS:26
+UVM_INFO scoreboard.sv(49) @ 3950: uvm_test_top.i_env.i_scb [scoreboard] -----MISO data Match-----
+UVM_INFO scoreboard.sv(50) @ 3950: uvm_test_top.i_env.i_scb [scoreboard] Master received MISO data:0  Slave sent MISO data:0
+UVM_INFO scoreboard.sv(58) @ 3950: uvm_test_top.i_env.i_scb [scoreboard] -----MOSI data Match-----
+UVM_INFO scoreboard.sv(59) @ 3950: uvm_test_top.i_env.i_scb [scoreboard] Master sent MOSI data:d  Slave received MOSI data:d
+UVM_INFO sequence1.sv(13) @ 4050: uvm_test_top.i_env.i_agent.i_sequencer@@i_seq [sequence1] Executing sequence
+UVM_INFO scoreboard.sv(31) @ 5950: uvm_test_top.i_env.i_scb [scoreboard] -----RD_WR Match-----
+UVM_INFO scoreboard.sv(32) @ 5950: uvm_test_top.i_env.i_scb [scoreboard] Master sent RD_WR:0  Slave received RD_WR:0
+UVM_INFO scoreboard.sv(40) @ 5950: uvm_test_top.i_env.i_scb [scoreboard] -----ADDRESS Match-----
+UVM_INFO scoreboard.sv(41) @ 5950: uvm_test_top.i_env.i_scb [scoreboard] Master sent ADDRESS:27  Slave received ADDRESS:27
+UVM_INFO scoreboard.sv(49) @ 5950: uvm_test_top.i_env.i_scb [scoreboard] -----MISO data Match-----
+UVM_INFO scoreboard.sv(50) @ 5950: uvm_test_top.i_env.i_scb [scoreboard] Master received MISO data:0  Slave sent MISO data:0
+UVM_INFO scoreboard.sv(58) @ 5950: uvm_test_top.i_env.i_scb [scoreboard] -----MOSI data Match-----
+UVM_INFO scoreboard.sv(59) @ 5950: uvm_test_top.i_env.i_scb [scoreboard] Master sent MOSI data:3b  Slave received MOSI data:3b
+UVM_INFO sequence1.sv(13) @ 6050: uvm_test_top.i_env.i_agent.i_sequencer@@i_seq [sequence1] Executing sequence
+UVM_INFO scoreboard.sv(31) @ 7950: uvm_test_top.i_env.i_scb [scoreboard] -----RD_WR Match-----
+UVM_INFO scoreboard.sv(32) @ 7950: uvm_test_top.i_env.i_scb [scoreboard] Master sent RD_WR:1  Slave received RD_WR:1
+UVM_INFO scoreboard.sv(40) @ 7950: uvm_test_top.i_env.i_scb [scoreboard] -----ADDRESS Match-----
+UVM_INFO scoreboard.sv(41) @ 7950: uvm_test_top.i_env.i_scb [scoreboard] Master sent ADDRESS:35  Slave received ADDRESS:35
+UVM_INFO scoreboard.sv(49) @ 7950: uvm_test_top.i_env.i_scb [scoreboard] -----MISO data Match-----
+UVM_INFO scoreboard.sv(50) @ 7950: uvm_test_top.i_env.i_scb [scoreboard] Master received MISO data:b7  Slave sent MISO data:b7
+UVM_INFO scoreboard.sv(58) @ 7950: uvm_test_top.i_env.i_scb [scoreboard] -----MOSI data Match-----
+UVM_INFO scoreboard.sv(59) @ 7950: uvm_test_top.i_env.i_scb [scoreboard] Master sent MOSI data:3b  Slave received MOSI data:3b
+UVM_INFO sequence1.sv(13) @ 8050: uvm_test_top.i_env.i_agent.i_sequencer@@i_seq [sequence1] Executing sequence
+UVM_INFO scoreboard.sv(31) @ 9950: uvm_test_top.i_env.i_scb [scoreboard] -----RD_WR Match-----
+UVM_INFO scoreboard.sv(32) @ 9950: uvm_test_top.i_env.i_scb [scoreboard] Master sent RD_WR:0  Slave received RD_WR:0
+UVM_INFO scoreboard.sv(40) @ 9950: uvm_test_top.i_env.i_scb [scoreboard] -----ADDRESS Match-----
+UVM_INFO scoreboard.sv(41) @ 9950: uvm_test_top.i_env.i_scb [scoreboard] Master sent ADDRESS:52  Slave received ADDRESS:52
+UVM_INFO scoreboard.sv(49) @ 9950: uvm_test_top.i_env.i_scb [scoreboard] -----MISO data Match-----
+UVM_INFO scoreboard.sv(50) @ 9950: uvm_test_top.i_env.i_scb [scoreboard] Master received MISO data:b7  Slave sent MISO data:b7
+UVM_INFO scoreboard.sv(58) @ 9950: uvm_test_top.i_env.i_scb [scoreboard] -----MOSI data Match-----
+UVM_INFO scoreboard.sv(59) @ 9950: uvm_test_top.i_env.i_scb [scoreboard] Master sent MOSI data:2c  Slave received MOSI data:2c
+UVM_INFO sequence1.sv(13) @ 10050: uvm_test_top.i_env.i_agent.i_sequencer@@i_seq [sequence1] Executing sequence
+UVM_INFO scoreboard.sv(31) @ 11950: uvm_test_top.i_env.i_scb [scoreboard] -----RD_WR Match-----
+UVM_INFO scoreboard.sv(32) @ 11950: uvm_test_top.i_env.i_scb [scoreboard] Master sent RD_WR:1  Slave received RD_WR:1
+UVM_INFO scoreboard.sv(40) @ 11950: uvm_test_top.i_env.i_scb [scoreboard] -----ADDRESS Match-----
+UVM_INFO scoreboard.sv(41) @ 11950: uvm_test_top.i_env.i_scb [scoreboard] Master sent ADDRESS:7d  Slave received ADDRESS:7d
+UVM_INFO scoreboard.sv(49) @ 11950: uvm_test_top.i_env.i_scb [scoreboard] -----MISO data Match-----
+UVM_INFO scoreboard.sv(50) @ 11950: uvm_test_top.i_env.i_scb [scoreboard] Master received MISO data:c3  Slave sent MISO data:c3
+UVM_INFO scoreboard.sv(58) @ 11950: uvm_test_top.i_env.i_scb [scoreboard] -----MOSI data Match-----
+UVM_INFO scoreboard.sv(59) @ 11950: uvm_test_top.i_env.i_scb [scoreboard] Master sent MOSI data:2c  Slave received MOSI data:2c
+UVM_INFO sequence1.sv(13) @ 12050: uvm_test_top.i_env.i_agent.i_sequencer@@i_seq [sequence1] Executing sequence
+UVM_INFO scoreboard.sv(31) @ 13950: uvm_test_top.i_env.i_scb [scoreboard] -----RD_WR Match-----
+UVM_INFO scoreboard.sv(32) @ 13950: uvm_test_top.i_env.i_scb [scoreboard] Master sent RD_WR:0  Slave received RD_WR:0
+UVM_INFO scoreboard.sv(40) @ 13950: uvm_test_top.i_env.i_scb [scoreboard] -----ADDRESS Match-----
+UVM_INFO scoreboard.sv(41) @ 13950: uvm_test_top.i_env.i_scb [scoreboard] Master sent ADDRESS:36  Slave received ADDRESS:36
+UVM_INFO scoreboard.sv(49) @ 13950: uvm_test_top.i_env.i_scb [scoreboard] -----MISO data Match-----
+UVM_INFO scoreboard.sv(50) @ 13950: uvm_test_top.i_env.i_scb [scoreboard] Master received MISO data:c3  Slave sent MISO data:c3
+UVM_INFO scoreboard.sv(58) @ 13950: uvm_test_top.i_env.i_scb [scoreboard] -----MOSI data Match-----
+UVM_INFO scoreboard.sv(59) @ 13950: uvm_test_top.i_env.i_scb [scoreboard] Master sent MOSI data:8b  Slave received MOSI data:8b
+UVM_INFO sequence1.sv(13) @ 14050: uvm_test_top.i_env.i_agent.i_sequencer@@i_seq [sequence1] Executing sequence
+UVM_INFO scoreboard.sv(31) @ 15950: uvm_test_top.i_env.i_scb [scoreboard] -----RD_WR Match-----
+UVM_INFO scoreboard.sv(32) @ 15950: uvm_test_top.i_env.i_scb [scoreboard] Master sent RD_WR:0  Slave received RD_WR:0
+UVM_INFO scoreboard.sv(40) @ 15950: uvm_test_top.i_env.i_scb [scoreboard] -----ADDRESS Match-----
+UVM_INFO scoreboard.sv(41) @ 15950: uvm_test_top.i_env.i_scb [scoreboard] Master sent ADDRESS:7e  Slave received ADDRESS:7e
+UVM_INFO scoreboard.sv(49) @ 15950: uvm_test_top.i_env.i_scb [scoreboard] -----MISO data Match-----
+UVM_INFO scoreboard.sv(50) @ 15950: uvm_test_top.i_env.i_scb [scoreboard] Master received MISO data:c3  Slave sent MISO data:c3
+UVM_INFO scoreboard.sv(58) @ 15950: uvm_test_top.i_env.i_scb [scoreboard] -----MOSI data Match-----
+UVM_INFO scoreboard.sv(59) @ 15950: uvm_test_top.i_env.i_scb [scoreboard] Master sent MOSI data:5  Slave received MOSI data:5
+UVM_INFO sequence1.sv(13) @ 16050: uvm_test_top.i_env.i_agent.i_sequencer@@i_seq [sequence1] Executing sequence
+UVM_INFO scoreboard.sv(31) @ 17950: uvm_test_top.i_env.i_scb [scoreboard] -----RD_WR Match-----
+UVM_INFO scoreboard.sv(32) @ 17950: uvm_test_top.i_env.i_scb [scoreboard] Master sent RD_WR:0  Slave received RD_WR:0
+UVM_INFO scoreboard.sv(40) @ 17950: uvm_test_top.i_env.i_scb [scoreboard] -----ADDRESS Match-----
+UVM_INFO scoreboard.sv(41) @ 17950: uvm_test_top.i_env.i_scb [scoreboard] Master sent ADDRESS:54  Slave received ADDRESS:54
+UVM_INFO scoreboard.sv(49) @ 17950: uvm_test_top.i_env.i_scb [scoreboard] -----MISO data Match-----
+UVM_INFO scoreboard.sv(50) @ 17950: uvm_test_top.i_env.i_scb [scoreboard] Master received MISO data:c3  Slave sent MISO data:c3
+UVM_INFO scoreboard.sv(58) @ 17950: uvm_test_top.i_env.i_scb [scoreboard] -----MOSI data Match-----
+UVM_INFO scoreboard.sv(59) @ 17950: uvm_test_top.i_env.i_scb [scoreboard] Master sent MOSI data:5a  Slave received MOSI data:5a
+UVM_INFO sequence1.sv(13) @ 18050: uvm_test_top.i_env.i_agent.i_sequencer@@i_seq [sequence1] Executing sequence
+UVM_INFO scoreboard.sv(31) @ 19950: uvm_test_top.i_env.i_scb [scoreboard] -----RD_WR Match-----
+UVM_INFO scoreboard.sv(32) @ 19950: uvm_test_top.i_env.i_scb [scoreboard] Master sent RD_WR:1  Slave received RD_WR:1
+UVM_INFO scoreboard.sv(40) @ 19950: uvm_test_top.i_env.i_scb [scoreboard] -----ADDRESS Match-----
+UVM_INFO scoreboard.sv(41) @ 19950: uvm_test_top.i_env.i_scb [scoreboard] Master sent ADDRESS:38  Slave received ADDRESS:38
+UVM_INFO scoreboard.sv(49) @ 19950: uvm_test_top.i_env.i_scb [scoreboard] -----MISO data Match-----
+UVM_INFO scoreboard.sv(50) @ 19950: uvm_test_top.i_env.i_scb [scoreboard] Master received MISO data:3c  Slave sent MISO data:3c
+UVM_INFO scoreboard.sv(58) @ 19950: uvm_test_top.i_env.i_scb [scoreboard] -----MOSI data Match-----
+UVM_INFO scoreboard.sv(59) @ 19950: uvm_test_top.i_env.i_scb [scoreboard] Master sent MOSI data:5a  Slave received MOSI data:5a
+UVM_INFO /home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_objection.svh(1268) @ 20050: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   99
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+[UVMTOP]     1
+[agent]     1
+[driver]     1
+[monitor]     1
+[scoreboard]    81
+[sequence1]    10
+[sequencer]     1
+[test]     1
+Simulation complete via $finish(1) at time 2005 NS + 49
+/home/install/INCISIVE152/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh:457     $finish;
+ncsim> coverage -analyze
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  top_tb(top_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_256bdef1_5318671d.ucm
+  data               :  ./cov_work/scope/test/icc_256bdef1_5318671d.ucd
+
+Launching IMC...
+
+ncsim> 
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  top_tb(top_tb)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_256bdef1_5318671d.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_256bdef1_5318671d.ucd
+TOOL:	ncverilog	15.20-s086: Exiting on Jan 09, 2025 at 17:18:27 IST  (total: 00:43:24)

@@ -1,0 +1,136 @@
+ncverilog(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s086: Started on Jan 15, 2025 at 20:43:07 IST
+ncverilog
+	TOP_module_tb.sv
+file: TOP_module_tb.sv
+	module worklib.SPI_Pro_tb:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.SPI_Pro_tb:sv <0x5b7f25d3>
+			streams:  26, words: 72670
+		worklib.m41:sv <0x1241a25f>
+			streams:   1, words:   466
+		worklib.m4x1:sv <0x65aa87d7>
+			streams:   1, words:   490
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              8       6
+		Registers:           37      33
+		Scalar wires:        18       -
+		Expanded wires:       2       1
+		Vectored wires:       7       -
+		Always blocks:       13       5
+		Initial blocks:       8       8
+		Cont. assignments:    2       3
+		Pseudo assignments:   4       4
+	Writing initial simulation snapshot: worklib.SPI_Pro_tb:sv
+Loading snapshot worklib.SPI_Pro_tb:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /home/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+                        Now testing mode 0 : reading on rising edge , writing on falling edge
+                                           ======================================
+                                          || Testing MODE 0 ({CPOL,CPHA}= {0,0})||
+                                           ======================================
+time  clk    CPOL    CPHA   load      Master_out    slave_out
+2  	1 	0 	0 	1 	xxxxxxxx 	01001011  +ve clk, idel state
+6  	1 	0 	0 	0 	xxxxxxx1 	00100101   +ve clk,+ve sclk read data 
+10  	1 	0 	0 	0 	xxxxxxx1 	00100101  +ve clk,-ve sclk, shift data out on output
+14  	1 	0 	0 	0 	xxxxxx11 	10010010   +ve clk,+ve sclk read data 
+18  	1 	0 	0 	0 	xxxxxx11 	10010010  +ve clk,-ve sclk, shift data out on output
+22  	1 	0 	0 	0 	xxxxx011 	11001001   +ve clk,+ve sclk read data 
+26  	1 	0 	0 	0 	xxxxx011 	11001001  +ve clk,-ve sclk, shift data out on output
+30  	1 	0 	0 	0 	xxxx1011 	01100100   +ve clk,+ve sclk read data 
+34  	1 	0 	0 	0 	xxxx1011 	01100100  +ve clk,-ve sclk, shift data out on output
+38  	1 	0 	0 	0 	xxx01011 	10110010   +ve clk,+ve sclk read data 
+42  	1 	0 	0 	0 	xxx01011 	10110010  +ve clk,-ve sclk, shift data out on output
+46  	1 	0 	0 	0 	xx001011 	11011001   +ve clk,+ve sclk read data 
+50  	1 	0 	0 	0 	xx001011 	11011001  +ve clk,-ve sclk, shift data out on output
+54  	1 	0 	0 	0 	x1001011 	01101100   +ve clk,+ve sclk read data 
+58  	1 	0 	0 	0 	x1001011 	01101100  +ve clk,-ve sclk, shift data out on output
+62  	1 	0 	0 	0 	01001011 	00110110   +ve clk,+ve sclk read data 
+66  	1 	0 	0 	0 	01001011 	00110110  +ve clk,-ve sclk, shift data out on output
+Data transmitted successfully
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+                        Now testing mode 1 : reading on falling edge , writing on rising edge 
+                                           ======================================
+                                          || Testing MODE 1 ({CPOL,CPHA}= {0,1})||
+                                           ======================================
+time  clk    CPOL    CPHA   load     Master_out slave_out
+72  	1 	0 	1 	0 	01001011 	10110100  +ve clk, idel state
+76  	1 	0 	1 	0 	01001011 	10110100   +ve clk,+ve sclk shift data out on output 
+80  	1 	0 	1 	0 	01001010 	11011010  +ve clk,-ve sclk, read data
+84  	1 	0 	1 	0 	01001010 	11011010   +ve clk,+ve sclk shift data out on output 
+88  	1 	0 	1 	0 	01001000 	11101101  +ve clk,-ve sclk, read data
+92  	1 	0 	1 	0 	01001000 	11101101   +ve clk,+ve sclk shift data out on output 
+96  	1 	0 	1 	0 	01001100 	01110110  +ve clk,-ve sclk, read data
+100  	1 	0 	1 	0 	01001100 	01110110   +ve clk,+ve sclk shift data out on output 
+104  	1 	0 	1 	0 	01000100 	10111011  +ve clk,-ve sclk, read data
+108  	1 	0 	1 	0 	01000100 	10111011   +ve clk,+ve sclk shift data out on output 
+112  	1 	0 	1 	0 	01010100 	01011101  +ve clk,-ve sclk, read data
+116  	1 	0 	1 	0 	01010100 	01011101   +ve clk,+ve sclk shift data out on output 
+120  	1 	0 	1 	0 	01110100 	00101110  +ve clk,-ve sclk, read data
+124  	1 	0 	1 	0 	01110100 	00101110   +ve clk,+ve sclk shift data out on output 
+128  	1 	0 	1 	0 	00110100 	10010111  +ve clk,-ve sclk, read data
+132  	1 	0 	1 	0 	00110100 	10010111   +ve clk,+ve sclk shift data out on output 
+136  	1 	0 	1 	0 	10110100 	01001011  +ve clk,-ve sclk, read data
+Data transmitted successfully
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+                        Now testing mode 2 : reading on rising edge , writing on falling edge, but with a skipped -ve edge
+                                           ======================================
+                                          || Testing MODE 2 ({CPOL,CPHA}= {1,0})||
+                                           ======================================
+time  clk    CPOL    CPHA   load     Master_out slave_out
+146  	1 	1 	0 	0 	10110100 	01001110  +ve clk, skipped edge 
+150  	1 	1 	0 	0 	10110100 	00100111   +ve clk,+ve sclk read data 
+154  	1 	1 	0 	0 	10110100 	00100111  +ve clk,-ve sclk, shift data out on output
+158  	1 	1 	0 	0 	10110110 	00010011   +ve clk,+ve sclk read data 
+162  	1 	1 	0 	0 	10110110 	00010011  +ve clk,-ve sclk, shift data out on output
+166  	1 	1 	0 	0 	10110110 	10001001   +ve clk,+ve sclk read data 
+170  	1 	1 	0 	0 	10110110 	10001001  +ve clk,-ve sclk, shift data out on output
+174  	1 	1 	0 	0 	10111110 	01000100   +ve clk,+ve sclk read data 
+178  	1 	1 	0 	0 	10111110 	01000100  +ve clk,-ve sclk, shift data out on output
+182  	1 	1 	0 	0 	10101110 	10100010   +ve clk,+ve sclk read data 
+186  	1 	1 	0 	0 	10101110 	10100010  +ve clk,-ve sclk, shift data out on output
+190  	1 	1 	0 	0 	10001110 	11010001   +ve clk,+ve sclk read data 
+194  	1 	1 	0 	0 	10001110 	11010001  +ve clk,-ve sclk, shift data out on output
+198  	1 	1 	0 	0 	11001110 	01101000   +ve clk,+ve sclk read data 
+202  	1 	1 	0 	0 	11001110 	01101000  +ve clk,-ve sclk, shift data out on output
+206  	1 	1 	0 	0 	01001110 	10110100   +ve clk,+ve sclk read data 
+210  	1 	1 	0 	0 	01001110 	10110100  +ve clk,-ve sclk, shift data out on output
+Data transmitted successfully
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+                        Now testing mode 3 : write on rising edge , read on falling edge but with a skipped -veedge at the beginning
+                                           ======================================
+                                          || Testing MODE 3 ({CPOL,CPHA}= {1,1})||
+                                           ======================================
+time  clk    CPOL    CPHA   load      Master_out    slave_out
+216  	1 	1 	1 	0 	01001110 	00110110  +ve clk, idel state
+224  	1 	1 	1 	0 	01001110 	00110110   +ve clk,+ve sclk shift data out on MOSI & MISO
+228  	1 	1 	1 	0 	01001110 	00011011  +ve clk,-ve sclk, read data
+232  	1 	1 	1 	0 	01001110 	00011011   +ve clk,+ve sclk shift data out on MOSI & MISO
+236  	1 	1 	1 	0 	01001110 	10001101  +ve clk,-ve sclk, read data
+240  	1 	1 	1 	0 	01001110 	10001101   +ve clk,+ve sclk shift data out on MOSI & MISO
+244  	1 	1 	1 	0 	01001110 	11000110  +ve clk,-ve sclk, read data
+248  	1 	1 	1 	0 	01001110 	11000110   +ve clk,+ve sclk shift data out on MOSI & MISO
+252  	1 	1 	1 	0 	01000110 	11100011  +ve clk,-ve sclk, read data
+256  	1 	1 	1 	0 	01000110 	11100011   +ve clk,+ve sclk shift data out on MOSI & MISO
+260  	1 	1 	1 	0 	01010110 	01110001  +ve clk,-ve sclk, read data
+264  	1 	1 	1 	0 	01010110 	01110001   +ve clk,+ve sclk shift data out on MOSI & MISO
+268  	1 	1 	1 	0 	01110110 	00111000  +ve clk,-ve sclk, read data
+272  	1 	1 	1 	0 	01110110 	00111000   +ve clk,+ve sclk shift data out on MOSI & MISO
+276  	1 	1 	1 	0 	00110110 	10011100  +ve clk,-ve sclk, read data
+280  	1 	1 	1 	0 	00110110 	10011100   +ve clk,+ve sclk shift data out on MOSI & MISO
+284  	1 	1 	1 	0 	00110110 	01001110  +ve clk,-ve sclk, read data
+Data transmitted successfully
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+ncsim: *W,RNQUIE: Simulation is complete.
+ncsim> exit
+TOOL:	ncverilog	15.20-s086: Exiting on Jan 15, 2025 at 20:43:07 IST  (total: 00:00:00)

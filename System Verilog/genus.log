@@ -1,0 +1,21 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[20:19:53.346529] Configured Lic search path (21.01-s002): 5280@cadenceserver
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: read_libs /home/install/FOUNDRY/digital/180nm/dig/lib/slow.lib 
+Date:    Wed Nov 20 20:19:53 2024
+Host:    cad31 (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (20cores*28cpus*1physical cpu*Intel(R) Core(TM) i7-14700 33792KB) (15902088KB)
+PID:     7635
+OS:      Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+
+[20:19:53.436386] Periodic Lic check successful
+[20:19:53.436393] Feature usage summary:
+[20:19:53.436394] Genus_Synthesis
+Checking out license: Genus_Synthesis
+couldn't read file "read_libs": no such file or directory
+Abnormal exit.

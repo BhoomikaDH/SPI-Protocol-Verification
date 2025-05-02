@@ -1,0 +1,19 @@
+s1(15Nov2024:21:05:05):  ncverilog SPImaster.sv -mess 
+s2(15Nov2024:21:05:23):  ncverilog SPIslave.sv -mess 
+s3(15Nov2024:21:05:45):  ncverilog TOP_module.sv -mess 
+s4(15Nov2024:21:05:51):  ncverilog TOP_module_tb.sv -mess 
+s5(15Nov2024:21:06:24):  ncverilog TOP_module_tb.sv -mess -gui 
+s6(15Nov2024:21:07:31):  irun TOP_module_tb.sv -access +rwc -gui 
+s7(19Nov2024:20:00:01):  irun TOP_module_tb.sv -access +rwc -gui 
+s8(19Nov2024:20:01:34):  irun TOP_module_tb.sv -access +rwc -gui 
+s9(19Nov2024:20:09:52):  ncverilog SPImaster_tb.sv -mess -gui 
+s10(19Nov2024:20:10:30):  irun TOP_module_tb.sv -access +rwc -gui 
+s11(19Nov2024:20:16:37):  irun TOP_module_tb.sv -access +rwc -gui 
+s12(19Nov2024:20:23:20):  irun TOP_module_tb.sv -access +rwc 
+s13(20Nov2024:20:05:13):  irun TOP_module_tb.sv -access +rwc 
+s14(20Nov2024:20:05:25):  irun TOP_module_tb.sv -access +rwc -gui 
+s15(20Nov2024:20:08:18):  ncverilog TOP_module_tb.sv -access +rwc -coverage all-gui 
+s16(20Nov2024:20:08:25):  ncverilog TOP_module_tb.sv -access +rwc -coverage all -gui 
+s17(20Nov2024:20:10:22):  ncverilog TOP_module_tb.sv -access +rwc -coverage all -gui 
+s18(20Nov2024:20:13:46):  ncverilog TOP_module_tb.sv -access +rwc -coverage all -gui 
+s19(20Nov2024:20:27:19):  irun TOP_module_tb.sv -access +rwc 

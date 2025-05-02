@@ -1,0 +1,7 @@
+s1(09Jan2025:16:26:06):  ncverilog -uvm testbench.sv -mess 
+s2(09Jan2025:16:26:42):  ncverilog -uvm testbench.sv -mess 
+s3(09Jan2025:16:30:57):  ncverilog -sv design.sv -mess 
+s4(09Jan2025:16:31:09):  ncverilog -uvm design.sv -mess 
+s5(09Jan2025:16:32:48):  ncverilog -uvm design.sv -mess 
+s6(09Jan2025:16:33:17):  ncverilog -uvm testbench.sv -mess 
+s7(09Jan2025:16:35:03):  ncverilog -uvm testbench.sv -access +rwc -coverage all -gui 
